@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+:root { font-family: Georgia,'Times New Roman',serif; color: #111; background: #fff; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 16px; }
+body { margin: 0; min-width: 320px; }
+button,input { font: inherit; }
+button,a { -webkit-tap-highlight-color: transparent; }
+::selection { color: #fff; background: #2769d7; }

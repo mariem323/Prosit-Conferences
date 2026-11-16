@@ -1,0 +1,2 @@
+.dashboard { display: grid; gap: 2px; padding: 0; }
+@media (max-width: 600px) { .dashboard { gap: 8px; } }

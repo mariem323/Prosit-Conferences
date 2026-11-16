@@ -1,0 +1,11 @@
+<article class="info-card friends-card">
+  <div class="icon-wrap friends-icon" aria-hidden="true">👥</div>
+  <div class="card-body">
+    <h2>Liste des amis</h2>
+    <div class="friends-grid">
+      @for (friend of friends; track friend.name) {
+        <div class="friend"><span class="avatar">{{ friend.initials }}</span><span><strong>{{ friend.name }}</strong><small>{{ friend.status }}</small></span></div>
+      }
+    </div>
+  </div>
+</article>

@@ -1,0 +1,22 @@
+<section class="conference-section" id="conferences">
+  <div class="section-title">
+    <span class="calendar-icon" aria-hidden="true">🗓️</span>
+    <div><h2>Liste des conférences à venir</h2><p>Cliquez sur une conférence pour afficher ses détails.</p></div>
+  </div>
+  <label class="search-box"><input type="search" [(ngModel)]="searchTerm" placeholder="Taper le titre de la conférence" aria-label="Rechercher une conférence par titre"></label>
+  <div class="conference-grid">
+    @for (conference of filteredConferences; track conference.id) {
+      <article class="conference-card">
+        <h3>{{ conference.title | uppercase }}</h3>
+        <p><strong>Date :</strong> {{ conference.date | date:'dd/MM/yyyy' }}</p>
+        <p><strong>Lieu :</strong> {{ conference.place }}</p>
+        <p><strong>Places restantes :</strong> {{ remainingPlaces(conference) }}</p>
+        <button type="button" [disabled]="remainingPlaces(conference) === 0" [style.backgroundColor]="buttonColor(conference)" (click)="register(conference)">
+          @if (remainingPlaces(conference) === 0) { Complet } @else { S'inscrire }
+        </button>
+      </article>
+    } @empty {
+      <p class="empty-state">Aucune conférence à venir ne correspond à votre recherche.</p>
+    }
+  </div>
+</section>

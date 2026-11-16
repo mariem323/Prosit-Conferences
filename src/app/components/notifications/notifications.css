@@ -1,0 +1,5 @@
+:host { display: block; }
+.info-card { min-height: 168px; padding: 25px 30px; display: flex; align-items: center; gap: 22px; border-left: 4px solid #f2a214; border-radius: 15px; background: #fff; box-shadow: 0 8px 18px #173b5b12; }.icon-wrap { width: 66px; height: 66px; flex: 0 0 66px; display: grid; place-items: center; border-radius: 50%; background: #fff3d7; font-size: 30px; }.card-body h2 { margin: 0 0 15px; color: #123f70; font: 700 26px Georgia,'Times New Roman',serif; }.card-body p { margin: 0 0 14px; color: #111; font: 17px Georgia,'Times New Roman',serif; }
+button { padding: 7px 12px; border: 1px solid #aeb9c7; border-radius: 4px; color: #102c4d; background: #f8fafc; font: 14px Arial,sans-serif; cursor: pointer; }button:hover { background: #eaf1fb; }
+ul { margin: 13px 0 0; padding-left: 20px; color: #43516a; font: 13px/1.8 Arial,sans-serif; }
+@media(max-width:540px) { .info-card { min-height: 150px; padding: 20px 16px; gap: 15px; }.icon-wrap { width: 52px; height: 52px; flex-basis: 52px; font-size: 24px; }.card-body h2 { font-size: 21px; }.card-body p { font-size: 14px; } }

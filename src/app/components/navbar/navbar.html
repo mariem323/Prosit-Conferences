@@ -1,0 +1,7 @@
+<nav class="navbar" aria-label="Navigation principale">
+  <ul>
+    @for (item of menuItems; track item.label) {
+      <li><a [href]="item.href" [class.active]="item.label === 'Accueil'">{{ item.label }}</a></li>
+    }
+  </ul>
+</nav>

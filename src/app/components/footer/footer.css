@@ -1,0 +1,4 @@
+:host { display: block; }
+.footer { min-height: 64px; padding: 18px 24px; display: flex; justify-content: center; align-items: center; gap: 20px; color: #fff; background: #193d67; font: 16px Georgia,'Times New Roman',serif; }
+.footer p { margin: 0; }.footer a { color: #fff; text-decoration: none; font: 12px Arial,sans-serif; }.footer a:hover { text-decoration: underline; }
+@media(max-width:520px) { .footer { flex-direction: column; gap: 8px; font-size: 13px; text-align: center; } }

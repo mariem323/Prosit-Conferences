@@ -1,0 +1,6 @@
+:host { display: block; background: #fff; }
+.navbar { min-height: 72px; padding: 8px 18px; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 14px #203b5a0b; }
+ul { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px; margin: 0; padding: 0; list-style: none; }
+a { display: block; padding: 12px 19px; border-radius: 9px; color: #12365f; text-decoration: none; font: 700 15px Georgia,'Times New Roman',serif; transition: background .18s,color .18s; }
+a:hover { background: #eaf1fb; } a.active { color: #fff; background: #2867ed; }
+@media(max-width:620px) { .navbar { padding: 8px 10px; } ul { gap: 4px; } a { padding: 10px 11px; font-size: 13px; } }

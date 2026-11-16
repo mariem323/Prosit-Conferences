@@ -1,0 +1,15 @@
+<article class="info-card notifications-card">
+  <div class="icon-wrap notifications-icon" aria-hidden="true">🔔</div>
+  <div class="card-body">
+    <h2>Zone de notifications</h2>
+    <p>Vous avez {{ notifications.length }} nouvelles notifications.</p>
+    <button type="button" (click)="showNotifications = !showNotifications">
+      {{ showNotifications ? 'Masquer les notifications' : 'Afficher les notifications' }}
+    </button>
+    @if (showNotifications) {
+      <ul>
+        @for (notification of notifications; track notification) { <li>{{ notification }}</li> }
+      </ul>
+    }
+  </div>
+</article>

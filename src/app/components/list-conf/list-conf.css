@@ -1,0 +1,18 @@
+:host { display: block; }
+.conference-section { padding: 28px 28px 34px; border-left: 4px solid #0f766e; background: #fff; }
+.section-title { display: flex; align-items: center; gap: 22px; margin-bottom: 25px; }
+.calendar-icon { width: 72px; height: 72px; flex: 0 0 72px; display: grid; place-items: center; border-radius: 50%; background: #e5f8f5; font-size: 31px; }
+h2 { margin: 0; color: #123f70; font: 700 28px Georgia,'Times New Roman',serif; }
+.section-title p { margin: 6px 0 0; color: #54718f; font: 18px Georgia,'Times New Roman',serif; }
+.search-box { display: block; width: min(545px,100%); margin-left: 0; }
+.search-box input { width: 100%; min-height: 56px; padding: 12px 20px; border: 2px solid #dedede; border-radius: 12px; outline: 0; color: #143a65; background: #fff; font: italic 17px Georgia,'Times New Roman',serif; }
+.search-box input::placeholder { color: #9aadc5; }.search-box input:focus { border-color: #4b8bbf; box-shadow: 0 0 0 3px #e9f2fb; }
+.conference-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; }
+.conference-card { min-height: 298px; padding: 23px 22px; border: 1px solid #d6e1ed; border-radius: 17px; background: #f6f9fc; }
+.conference-card h3 { margin: 0 0 26px; color: #103e70; font: 700 22px/1.25 Georgia,'Times New Roman',serif; }
+.conference-card p { margin: 0 0 20px; color: #111; font: 17px Georgia,'Times New Roman',serif; }.conference-card p strong { font-weight: 700; }
+.conference-card button { margin-top: 0; min-width: 115px; padding: 13px 18px; border: 0; border-radius: 11px; color: #fff; font: 700 16px Arial,sans-serif; cursor: pointer; }
+.conference-card button:disabled { cursor: not-allowed; opacity: 1; }
+.empty-state { grid-column: 1/-1; margin: 0; padding: 28px; border: 1px solid #d6e1ed; border-radius: 14px; color: #123f70; background: #f6f9fc; text-align: center; font: 18px Georgia,'Times New Roman',serif; }
+@media(max-width:850px) { .conference-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }.conference-section { padding: 25px 22px; } }
+@media(max-width:600px) { .section-title { gap: 14px; }.calendar-icon { width: 55px; height: 55px; flex-basis: 55px; font-size: 24px; }h2 { font-size: 22px; }.section-title p { font-size: 14px; }.conference-grid { grid-template-columns: 1fr; gap: 11px; }.conference-card { min-height: 0; padding: 20px; }.conference-card h3 { font-size: 20px; }.conference-section { padding: 22px 14px; } }
